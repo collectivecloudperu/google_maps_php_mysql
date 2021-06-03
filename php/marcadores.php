@@ -8,6 +8,6 @@
 
   // Seleccionamos los datos para crear los marcadores en el Mapa de Google serian direccion, lat y lng 
   while ($row = mysqli_fetch_array($result)) {
-      echo '["' . $row['direccion'] . '", ' . $row['lat'] . ', ' . $row['lng'] . '],';
+      echo '["' . $row['nombre'] . ', ' . $row['direccion'] . '", ' . $row['lat'] . ', ' . $row['lng'] . '],';
   }
 ?>
